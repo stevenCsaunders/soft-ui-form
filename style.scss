@@ -1,0 +1,130 @@
+$error-color: #b32d23;
+$success-color: #23b39d;
+
+:root {
+    --success-color: #{$success-color};
+    --error-color: #{$error-color};
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	background-color: #55b9f3;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 5rem;
+    text-shadow: 1px 1px 1px #aaaaaa;
+}
+
+.container {
+	border-radius: 10px;
+    background: #55b9f3;
+    box-shadow:  5px 5px 10px #479aca, 
+                 -5px -5px 10px #63d8ff;
+	width: 75vw;
+	max-width: 500px;
+	.form {
+		padding: 50px 35px;
+		button {
+            width: 100%;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #55b9f3;
+            text-shadow: 1px 1px 1px #aaaaaa;
+            box-shadow:  5px 5px 10px #479aca, 
+                         -5px -5px 10px #63d8ff;
+        }
+        button:active {
+            background: #55b9f3;
+            box-shadow: inset 5px 5px 10px #479aca, 
+                        inset -5px -5px 10px #63d8ff;
+         }
+         button:focus {
+             outline: none;
+         }
+	}
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    label {
+        color: white;
+        text-shadow: 1px 1px 1px #aaaaaa;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    input {
+        width: 100%;
+        color: white;
+        border: none;
+        display: block;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        background: #55b9f3;
+        box-shadow: inset 5px 5px 10px #4eaae0, 
+        inset -5px -5px 10px #5cc8ff;
+
+
+    }
+    input::placeholder {
+        color: #afe1fd;
+        font-weight: 300;
+        
+    }
+    input:focus {
+        outline: none;
+        border-color: #237eb3;
+        box-shadow: inset 5px 5px 10px #479aca, 
+        inset -5px -5px 10px #63d8ff;
+    }
+    small {
+        color: var(--error-color);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        visibility: hidden;
+    }
+}
+
+.success input {
+    border: 1px solid var(--success-color);
+}
+.error {
+    input{
+        border: 1px solid var(--error-color);
+    }
+    small {
+        visibility: visible;
+    }
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Neomorphism Form with Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="submit" id="form" class="form">
+            <h2>Start a New Account With Us</h2>
+            <div class="form-control">
+                <label for="username">username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password-confirm">confirm password</label>
+                <input type="password" id="password-confirm" placeholder="Confirm Password ">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+
+</html>
