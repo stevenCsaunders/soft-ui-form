@@ -89,8 +89,13 @@ h2 {
         background: #55b9f3;
         box-shadow: inset 5px 5px 10px #4eaae0, 
         inset -5px -5px 10px #5cc8ff;
-
-
+    }
+    //THIS IS TO OVERIDE THE CHROME AUTOFILL BACKGROUND COLOR
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active { 
+        -webkit-background-clip: text;
     }
     input::placeholder {
         color: #afe1fd;

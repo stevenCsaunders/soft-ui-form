@@ -84,6 +84,12 @@ h2 {
   background: #55b9f3;
   box-shadow: inset 5px 5px 10px #4eaae0, inset -5px -5px 10px #5cc8ff;
 }
+.form-control input:-webkit-autofill,
+.form-control input:-webkit-autofill:hover,
+.form-control input:-webkit-autofill:focus,
+.form-control input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+}
 .form-control input::placeholder {
   color: #afe1fd;
   font-weight: 300;
